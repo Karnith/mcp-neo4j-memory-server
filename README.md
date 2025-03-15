@@ -31,17 +31,17 @@ MCP Neo4j Knowledge Graph Memory Server是一个基于Neo4j图数据库的知识
 
 ```bash
 # 全局安装
-npm install -g @izumisy/mcp-neo4j-memory-server
+npm install -g @jovanhsu/mcp-neo4j-memory-server
 
 # 或作为项目依赖安装
-npm install @izumisy/mcp-neo4j-memory-server
+npm install @jovanhsu/mcp-neo4j-memory-server
 ```
 
 ### 使用Docker
 
 ```bash
 # 使用docker-compose启动Neo4j和Memory Server
-git clone https://github.com/IzumiSy/mcp-neo4j-memory-server.git
+git clone https://github.com/JovanHsu/mcp-neo4j-memory-server.git
 cd mcp-neo4j-memory-server
 docker-compose up -d
 ```
@@ -202,7 +202,7 @@ console.log(result);
 
 ```bash
 # 克隆仓库
-git clone https://github.com/IzumiSy/mcp-neo4j-memory-server.git
+git clone https://github.com/JovanHsu/mcp-neo4j-memory-server.git
 cd mcp-neo4j-memory-server
 
 # 安装依赖
@@ -254,6 +254,6 @@ npm publish
 
 ## 联系方式
 
-- GitHub: [https://github.com/IzumiSy/mcp-neo4j-memory-server](https://github.com/IzumiSy/mcp-neo4j-memory-server)
-- NPM: [https://www.npmjs.com/package/@izumisy/mcp-neo4j-memory-server](https://www.npmjs.com/package/@izumisy/mcp-neo4j-memory-server)
-- 作者: IzumiSy
+- GitHub: [https://github.com/JovanHsu/mcp-neo4j-memory-server](https://github.com/JovanHsu/mcp-neo4j-memory-server)
+- NPM: [https://www.npmjs.com/package/@jovanhsu/mcp-neo4j-memory-server](https://www.npmjs.com/package/@jovanhsu/mcp-neo4j-memory-server)
+- 作者: JovanHsu
