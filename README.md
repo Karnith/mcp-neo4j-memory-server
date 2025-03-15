@@ -88,11 +88,11 @@ docker-compose up -d
 1. 安装[MCP Inspector](https://github.com/modelcontextprotocol/inspector)
 2. 启动Neo4j Memory Server：
    ```bash
-   npx @izumisy/mcp-neo4j-memory-server
+   npx @jovanhsu/mcp-neo4j-memory-server
    ```
 3. 在另一个终端启动MCP Inspector：
    ```bash
-   npx @modelcontextprotocol/inspector npx @izumisy/mcp-neo4j-memory-server
+   npx @modelcontextprotocol/inspector npx @jovanhsu/mcp-neo4j-memory-server
    ```
 4. 在浏览器中访问MCP Inspector界面
 
