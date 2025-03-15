@@ -1,0 +1,70 @@
+{
+  "name": "@jovanhsu/mcp-neo4j-memory-server",
+  "version": "1.0.0",
+  "private": false,
+  "description": "MCP Memory Server with Neo4j backend for AI knowledge graph storage",
+  "homepage": "https://github.com/JovanHsu/mcp-neo4j-memory-server",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JovanHsu/mcp-neo4j-memory-server.git"
+  },
+  "type": "module",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "mcp-neo4j-memory-server": "dist/index.mjs"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mcp",
+    "memory",
+    "knowledge",
+    "graph",
+    "neo4j",
+    "ai",
+    "claude",
+    "anthropic",
+    "knowledge-graph",
+    "memory-server",
+    "model-context-protocol"
+  ],
+  "author": "JovanHsu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JovanHsu/mcp-neo4j-memory-server/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "neo4j-driver": "^5.18.0",
+    "fuse.js": "^7.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.28.1",
+    "@types/node": "^22.13.5",
+    "prettier": "^3.5.2",
+    "shx": "^0.3.4",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.7"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm build && npx @modelcontextprotocol/inspector pnpm start",
+    "build": "tsup src/index.ts && shx chmod +x dist/index.mjs",
+    "start": "node dist/index.mjs 2>/dev/null",
+    "test": "vitest run",
+    "lint": "prettier --write .",
+    "prepublishOnly": "pnpm build",
+    "release": "pnpm build && changeset publish"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,33 @@
+# 源代码
+src/
+
+# 测试文件
+test/
+*.test.ts
+*.spec.ts
+vitest.config.ts
+
+# 配置文件
+tsconfig.json
+tsup.config.ts
+.prettierrc
+.eslintrc
+.github/
+
+# Docker相关
+Dockerfile
+docker-compose.yml
+
+# 开发工具配置
+.vscode/
+.idea/
+.editorconfig
+
+# 其他
+node_modules/
+.DS_Store
+*.log
+.env
+.env.*
+coverage/
+.changeset/
